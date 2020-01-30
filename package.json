@@ -7,6 +7,7 @@
   "author": "blockmatic.io",
   "license": "MIT",
   "scripts": {
+    "dev": "ts-node-dev --no-deps --respawn src/index",
     "build": "tsc",
     "lint": "eslint --ignore-path .gitignore \"**/*.+(js|ts|tsx)\"",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\""

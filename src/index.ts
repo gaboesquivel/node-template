@@ -1,6 +1,6 @@
 import * as http from 'http'
 
-const hostname = '127.0.0.1'
+const hostname = process.env.HOSTNAME || '0.0.0.0'
 const port = Number(process.env.PORT || 3000)
 
 const server = http.createServer((_req, res) => {

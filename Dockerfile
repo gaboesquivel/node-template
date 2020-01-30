@@ -1,4 +1,4 @@
-FROM blockmatic-node-dev:latest
+FROM blockmatic/node-dev:latest
 
 # # Install app dependencies
 COPY package*.json ./

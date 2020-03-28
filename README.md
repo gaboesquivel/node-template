@@ -3,9 +3,6 @@
 	<a href="https://git.io/col">
 		<img src="https://img.shields.io/badge/%E2%9C%93-collaborative_etiquette-brightgreen.svg" alt="Collaborative Etiquette">
 	</a>
-  <a href="https://developers.blockmatic.io">
-		<img src="https://img.shields.io/badge/code%20style-blockmatic-brightgreen.svg" alt="Blockmatic Standard">
-	</a>
 	<a href="https://twitter.com/intent/follow?screen_name=blockmatic_io">
 		<img src="https://img.shields.io/twitter/follow/blockmatic_io.svg?style=social&logo=twitter" alt="Follow on Twitter" />
 	</a>
@@ -54,7 +51,7 @@ Read the [contributing guidelines](https://developers.blockmatic.io) for details
 
 ## Blockmatic
 
-Blockmatic is building a robust ecosystem of people and tools for development of decentralized applications.
+Blockmatic is building a robust ecosystem of people and tools for the development of blockchain applications.
 
 [blockmatic.io](https://blockmatic.io)
 

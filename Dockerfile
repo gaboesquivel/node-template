@@ -1,9 +1,13 @@
-FROM blockmatic/node-dev:latest
-
-# # Install app dependencies
-COPY package*.json ./
-COPY yarn.lock ./
+FROM node:12 as builder
+WORKDIR /usr/src/app
+COPY package.json .
+COPY yarn*.lock .
 RUN yarn --ignore-optional --frozen-lockfile install
-
-# Bundle app source
 COPY . .
+RUN yarn build
+
+FROM node:12-slim as runtime
+WORKDIR /usr/src/app
+COPY --from=builder /usr/src/app/dist .
+COPY --from=builder /usr/src/app/node_modules ./node_modules
+CMD [ "node", "." ]

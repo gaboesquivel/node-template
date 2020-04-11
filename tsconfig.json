@@ -1,6 +1,7 @@
 {
   "extends": "./node_modules/@blockmatic/tsconfig/tsconfig.nodejs.json",
   "compilerOptions": {
+    "target": "ES6",
     "baseUrl": "./src",
     "rootDirs": ["src/"],
     "outDir": "dist"

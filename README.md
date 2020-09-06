@@ -20,10 +20,10 @@ yarn dev
 
 ```
 # Build the image
-docker build -t blockmatic-nodejs-template .
+docker build -t image_name .
 
 # Start a container
-docker run -p 3000:3000 -d blockmatic-nodejs-template
+docker run -p 3000:3000 -d image_name
 
 # Get container ID
 docker ps

@@ -1,7 +1,6 @@
 import * as http from 'http'
-
-const hostname = process.env.HOSTNAME || '0.0.0.0'
-const port = Number(process.env.PORT || 3000)
+import { config } from './config'
+import { log } from './utils/logger'
 
 const server = http.createServer((_req, res) => {
   res.statusCode = 200
@@ -9,6 +8,4 @@ const server = http.createServer((_req, res) => {
   res.end('Hello World')
 })
 
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`)
-})
+server.listen(config.port, config.hostname, () => log.info(`Server running at http://${config.hostname}:${config.port}/`))

@@ -1,10 +1,16 @@
 {
-  "extends": "./node_modules/@blockmatic/tsconfig/tsconfig.nodejs.json",
   "compilerOptions": {
-    "target": "ES6",
-    "baseUrl": "./src",
-    "rootDirs": ["src/"],
-    "outDir": "dist"
+    "outDir": "dist",
+    "rootDir": "src",
+    "target": "es2017",
+    "lib": ["esnext"],
+    "declaration": false,
+    "sourceMap": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "experimentalDecorators": false,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true
   },
-  "exclude": ["node_modules"]
+  "include": ["src"]
 }

@@ -26,7 +26,6 @@
   "devDependencies": {
     "@blockmatic/eslint-config": "^2.0.0",
     "@blockmatic/prettier-config": "^2.0.0",
-    "@blockmatic/tsconfig": "^2.0.0",
     "@types/node": "^15.12.2",
     "eslint": "7",
     "husky": "^6.0.0",

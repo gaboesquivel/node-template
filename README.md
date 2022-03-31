@@ -1,4 +1,4 @@
-# Blockmatic NodeJS Template
+# PowerStack NodeJS Starter
 
 NodeJS Starter Template
 

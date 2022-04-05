@@ -1,17 +1,17 @@
 {
-  "name": "blockmatic-nodejs-template",
+  "name": "raremint-webhooks",
   "version": "1.0.0",
-  "description": "blockmatic nodejs template",
+  "description": "",
   "main": "index.js",
-  "repository": "git@github.com:blockmatic/nodejs-template.git",
-  "author": "blockmatic.io",
-  "license": "MIT",
+  "repository": "",
+  "license": "UNLICENSED",
   "scripts": {
     "dev": "ts-node-dev --no-deps --no-notify --respawn src/index",
     "start": "node ./dist",
     "build": "tsc -b",
     "lint": "eslint --ignore-path .gitignore \"**/*.+(js|ts|tsx)\"",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\""
+    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\"",
+    "prisma-gen": "prisma db pull && prisma generate"
   },
   "lint-staged": {
     "*.{ts,tsx,js}": [
@@ -32,8 +32,8 @@
     "husky": "^7.0.2",
     "lint-staged": "^11.1.2",
     "prettier": "^2.4.0",
-    "typescript": "^4.4.3",
-    "prisma": "^3.11.1"
+    "prisma": "^3.12.0",
+    "typescript": "^4.4.3"
   },
   "dependencies": {
     "@prisma/client": "^3.11.1",

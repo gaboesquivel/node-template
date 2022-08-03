@@ -38,7 +38,9 @@ docker logs <container id>
 
 ## Contributing
 
-Read the [contributing guidelines](https://developers.blockmatic.io) for details.
+We use a [Discussions Board](https://github.com/blockmatic/powerstack-docs/discussions/1) to gather thoughts, bug reports and feature requests from the community.
+
+Follow the standard Github Flow for PRs. [Contributing Guidelines](https://docs.powerstack.xyz/powerstack/other-resources/contributing-guidelines).
 
 ## Blockmatic
 

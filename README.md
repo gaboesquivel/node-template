@@ -9,11 +9,8 @@ _Disclaimer: This is a work in progress. Will be finalized soon._
 ## Yarn
 
 ```
-# Install nodemon typescript for dev
-yarn --ignore-optional global add ts-node-dev typescript
-
 # Install project dependencies
-yarn install
+yarn
 
 # Development server with reload
 yarn dev
@@ -24,16 +21,22 @@ yarn dev
 
 ```
 # Build the image
-docker build -t image_name .
+docker build -t your-image-name:local .
 
 # Start a container
-docker run -p 3000:3000 -d image_name
+docker run --name your-image-name --env-file .env -p 3300:3300 -d your-image-name:local
 
 # Get container ID
-docker ps
+docker ps -aqf "name=^image-name-here$"
 
 # Print app output
-docker logs <container id>
+docker logs -f your-image-name
+
+# Stop, start, restart, kill
+docker stop your-image-name
+docker start your-image-name
+docker restart your-image-name
+docker kill your-image-name
 ```
 
 ## Contributing

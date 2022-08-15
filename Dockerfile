@@ -1,5 +1,6 @@
 FROM node:14 as builder
 WORKDIR /usr/src/app
+RUN yarn --ignore-optional global add typescript
 COPY package.json .
 COPY yarn*.lock .
 RUN yarn --ignore-optional --frozen-lockfile install

@@ -1,4 +1,4 @@
-FROM node:14 as builder
+FROM node:16 as builder
 WORKDIR /usr/src/app
 RUN yarn --ignore-optional global add typescript
 COPY package.json .
